@@ -40,6 +40,11 @@ function saveBookmarks(e){
         // console.log(localStorage.getItem("bookmarks"))
 
     }
+
+    if(!siteUrl.includes("https") || !siteUrl.includes('http')){
+        alert("Url must be start with https or http")
+        return false;
+    }
     fetchBookmarks()
 
 
